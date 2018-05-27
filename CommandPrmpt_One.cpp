@@ -4,6 +4,8 @@
 #include<locale.h>
 #include<windows.h>
 
+//МіСЄСп
+
 #define STR_LEN 256
 #define CMD_TOKEN_NUM 10
 
