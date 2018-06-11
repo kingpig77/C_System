@@ -11,8 +11,8 @@ int _tmain(int argc, TCHAR* argv[])
 	
 	si.cb = sizeof(si);
 	si.dwFlags = STARTF_USEPOSITION | STARTF_USESIZE;
-	si.dwX = 100;
-	si.dwY = 200;
+	si.dwX = 100;	//프로세스사이즈 100 
+	si.dwY = 200;	
 	si.dwXSize = 300;
 	si.dwYSize = 200;
 	si.lpTitle = _T("I am a boy!");
