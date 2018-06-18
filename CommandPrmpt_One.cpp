@@ -67,7 +67,7 @@ int CmdProcessing(void)
 		si.cb = sizeof(si);
 		BOOL isRun =
 		CreateProcess ( NULL, cmdTokenList[0], NULL, NULL,
-		TRUE, 0, NULL, NULL, &si, &pi);
+		TRUE, CREATE_NEW_CONSOLE, NULL, NULL, &si, &pi);
 		if(isRun == FALSE)
 		_tprintf(ERROR_CMD, cmdTokenList[0]);
 	}

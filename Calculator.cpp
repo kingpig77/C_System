@@ -52,6 +52,10 @@ int _tmain(int argc, TCHAR* argv[])
 				CreateProcess (
 				NULL, command, NULL, NULL,
 				TRUE, 0, NULL, NULL, &si, &pi );
+
+				CloseHandle(pi.hProcess);
+				CloseHandle(pi.hThread);
+				
 				break;
 		}
 	}
